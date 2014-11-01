@@ -12,17 +12,24 @@ class TranslationBoxElement extends PolymerElement {
   @observable List languages;
   @observable String selectedLanguage;
   Map translationsMap;
-  
+    
   TranslationBoxElement.created() : super.created() {
+  }
+  
+  void attached() {
+    super.attached();
+    
     translationsMap = JSON.decode(translations);
     
     languages = new List.from(translationsMap.keys);
     selectedLanguage = default_lang;
   }
-  
+
+  /*
   void submitTranslation(Event event, var detail, Node target) {
     print(translation);
   }
+  */
   
   void selectedLanguageChanged(oldValue, newValue) {
     if (oldValue != null) {

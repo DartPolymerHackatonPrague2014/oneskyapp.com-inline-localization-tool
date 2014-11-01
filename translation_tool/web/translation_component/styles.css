@@ -13,6 +13,7 @@ body {
 }
 .highlight {
     border: 1px crimson solid;
+    cursor: pointer;
 }
 .highlight:before{
     content: url('images/touch/tab_notification.png');

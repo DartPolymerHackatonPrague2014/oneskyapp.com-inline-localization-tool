@@ -1,0 +1,21 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="packages/paper_elements/paper_checkbox.html">
+
+<polymer-element name="translation-tool" attributes="checked">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+      paper-checkbox{
+        padding: 0px 20px 20px 0px;
+      }
+
+    </style>
+    <div horizontal layout>
+    <paper-checkbox id="myCheckbox" type="checkbox" checked="{{checked}}"></paper-checkbox><div vertical layout><b>Přeložit</b></div>
+    </div>
+
+  </template>
+  <script type="application/dart" src="translation-tool.dart"></script>
+</polymer-element>

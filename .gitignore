@@ -1,6 +1,8 @@
 # Don’t commit the following directories created by pub.
 build/
 packages/
+translation_tool/web/packages
+translation_tool/web/translation_component/packages
 .buildlog
 .pub
 

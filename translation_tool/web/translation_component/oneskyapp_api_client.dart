@@ -6,9 +6,13 @@ class OneSkyAppApiClient {
   
   OneSkyAppApiClient() {
      // mock data
-     localizations['WelcomeMsg'] = new Localization('WelcomeMsg', { 
-        'cs' : 'Webové komponenty znamenají novou éru webového vývoje....', 
-        'en' : 'Web Components usher in a new era of web development based on encapsulated and interoperable custom elements that extend HTML itself. Built atop these new standards, Polymer makes it easier and faster to create anything from a button to a complete application across desktop, mobile, and beyond.' 
+     localizations['CustomElements'] = new Localization('CustomElements', { 
+        'cs' : 'Vlastní elementy', 
+        'en' : 'Custom Elements' 
+      });
+     localizations['ShowdowDOM'] = new Localization('ShowdowDOM', { 
+        'cs' : 'Stínový DOM', 
+        'en' : 'Showdow DOM' 
       });
   }
     

@@ -14,9 +14,14 @@
       :host {
         display: block;
       }
-    </style>
-    <input it="myCheckbox" type="checkbox" checked="{{checked}}"/><span><b>Přeložit</b></span>
+      paper-checkbox{
+        padding: 0px 20px 20px 0px;
+      }
 
+    </style>
+    <div horizontal layout>
+    <paper-checkbox id="myCheckbox" type="checkbox" checked="{{checked}}"></paper-checkbox><div vertical layout><b>Přeložit</b></div>
+    </div>
 
   </template>
   <script type="application/dart" src="attr_high.dart"></script>

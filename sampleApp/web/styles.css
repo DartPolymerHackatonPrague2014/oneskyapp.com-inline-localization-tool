@@ -11,6 +11,9 @@ body {
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-touch-callout: none;
 }
-.highlight{
-    border:1px crimson solid;
+.highlight {
+    border: 1px crimson solid;
+}
+.highlight:after{
+    content: url('images/touch/tab_notification.png');
 }

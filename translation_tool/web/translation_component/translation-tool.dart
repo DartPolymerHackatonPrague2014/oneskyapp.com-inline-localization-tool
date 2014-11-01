@@ -23,6 +23,10 @@ class TranslationToolElement extends PolymerElement {
   
     for (Element localizedElement in localizedElements) {
       HtmlElement dialog = new Element.tag("paper-dialog");
+      dialog.attributes = {
+        'autoCloseDisabled': 'true',
+        'transition': 'paper-dialog-transition-center'
+      };
 
       Element box = new Element.tag("translation-box");
       String messsage_key = localizedElement.attributes['localization_key'];
@@ -43,12 +47,11 @@ class TranslationToolElement extends PolymerElement {
       submit.attributes = {
         'label': 'Submit',
         'affirmative': 'true',
-        'autofocus': 'true',
-        'transition': 'paper-dialog-transition-center'
+        'autofocus': 'true'
       };
       dialog.nodes.add(submit);
       
-      localizedElement.nodes.add(dialog);
+      localizedElement.parent.nodes.add(dialog);
       
       
       localizedElement.onClick.listen((MouseEvent event) {

@@ -16,11 +16,19 @@
       }
     </style>
 
-    <paper-input label="Type something..." inputValue="{{input}}"></paper-input>
-
-    <p>
-      Reversed: {{ reversed }}
+    <p translateId="WelcomeMsg">
+      Web Components usher in a new era of web development based on encapsulated and interoperable custom elements that extend HTML itself. Built atop these new standards, Polymer makes it easier and faster to create anything from a button to a complete application across desktop, mobile, and beyond.
     </p>
+    <table>
+      <tr>
+        <td>Custom Elements</td>
+        <td translateId="CustomElements">Custom Elements let authors define their own elements. Authors associate JavaScript code with custom tag names, and then use those custom tag names as they would any standard tag.</td>
+      </tr>
+      <tr>
+        <td>Shadow DOM</td>
+        <td translateId="ShowdowDOM">Shadow DOM is designed to provide encapsulation by hiding DOM subtrees under shadow roots. It provides a method of establishing and maintaining functional boundaries between DOM trees and how these trees interact with each other within a document, thus enabling better functional encapsulation within the DOM..</td>
+      </tr>
+    </table>
   </template>
   <script type="application/dart" src="main_app.dart"></script>
 </polymer-element>

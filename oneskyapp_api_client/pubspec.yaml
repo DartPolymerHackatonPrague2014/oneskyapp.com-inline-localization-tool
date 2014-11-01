@@ -1,0 +1,10 @@
+name: oneskyapp_api_client
+version: 0.0.1-dev
+description: This is a client library for OneSkyApp.com API
+authors:
+  - Michal Bernhard <michal@bernhard.cz>
+dependencies: 
+  browser: any
+  #json_object: any 
+dev_dependencies:
+  unittest: '>=0.11.0 < 1.0.0'

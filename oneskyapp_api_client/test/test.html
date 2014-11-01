@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests</title>
+  </head>
+ 
+  <body>   
+    <p id="text">Show developer console to see unit test result</p>
+    <button id="testRunner">Run tests!</button>
+    <script type="application/dart" src="unittest.dart"></script>
+    <!-- for this next line to work, your pubspec.yaml file must have a dependency on 'browser' -->
+    <script src="packages/browser/dart.js"></script>
+    
+    <script type="text/javascript">
+    	var testRunnerButton = document.querySelector("#testRunner")
+    	testRunnerButton.addEventListener('click', function() {    	  
+    	  navigator.webkitStartDart();  	    	  
+    	});    	
+    </script>
+  </body>
+</html>

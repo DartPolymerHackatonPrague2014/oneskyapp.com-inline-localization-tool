@@ -6,7 +6,10 @@ class OneSkyAppApiClient {
   
   OneSkyAppApiClient() {
      // mock data
-     localizations['my.localization'] = new Localization('my.localization', { 'cs' : 'Česká', 'en' : 'English' });
+     localizations['WelcomeMsg'] = new Localization('WelcomeMsg', { 
+        'cs' : 'Webové komponenty znamenají novou éru webového vývoje....', 
+        'en' : 'Web Components usher in a new era of web development based on encapsulated and interoperable custom elements that extend HTML itself. Built atop these new standards, Polymer makes it easier and faster to create anything from a button to a complete application across desktop, mobile, and beyond.' 
+      });
   }
     
   Localization getLocalization(String localizationKey) {

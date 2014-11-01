@@ -1,0 +1,38 @@
+<link rel="import" href="packages/polymer/polymer.html">
+<link rel="import" href="packages/paper_elements/paper_button.html">
+<link rel="import" href="packages/paper_elements/paper_input.html">
+
+<polymer-element name="translation-box" attributes="messsage_key default_lang">
+    <template>
+        <style>
+          .box {
+            margin: 0;
+            padding: 0.5em;            
+          }
+          
+          .translation_line {
+            overflow: auto;
+          }          
+          .translation_input {
+            float: left;
+           }
+          .translation_submit {
+            padding: 0.75em 0 0.75em 0.75em;
+          }
+          
+          .message_key {
+            font-color: #555;
+            font-size: smaller;
+          }
+        </style>
+        
+        <div class="box">
+          <div class="translation_line">
+            <paper-input type="text" value="{{translation}}" onClick="this.select();" class="translation_input"></paper-input>
+            <paper-button on-click="{{submitTranslation}}" label="Submit" class="translation_submit"></paper-button>
+          </div>
+          <div class="message_key">Key: {{messsage_key}}</div>
+        </div>
+	</template>
+	<script type="application/dart" src="translation-box.dart"></script>
+</polymer-element>

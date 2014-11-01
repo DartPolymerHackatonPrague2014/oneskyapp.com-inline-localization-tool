@@ -14,6 +14,7 @@ body {
 .highlight {
     border: 1px crimson solid;
 }
-.highlight:after{
+.highlight:before{
     content: url('images/touch/tab_notification.png');
+    float:right;
 }

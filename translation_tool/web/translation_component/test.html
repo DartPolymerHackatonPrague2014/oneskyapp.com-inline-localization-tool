@@ -11,6 +11,9 @@
     <script src="packages/web_components/dart_support.js"></script>
 
     <link rel="import" href="translation-box.html">
+    <link rel="import" href="packages/paper_elements/paper_dialog.html">
+    <link rel="import" href="packages/paper_elements/paper_dialog_transition.html">
+    <link rel="import" href="packages/paper_elements/paper_button.html">
     
     <link rel="stylesheet" href="test.css">
   </head>
@@ -22,12 +25,19 @@
     <div id="sample_container_id">
     </div>
 
+    <div localization_key="pozdrav">Ahoj</div>
+    
+    <div localization_key="louceni">Nashledanou</div>
+
+<!--    
       <translation-box messsage_key="pozdrav" default_lang="cs" translations='{"cs": "Ahoj", "en": "Hello"}'>
       
       </translation-box>
+-->
 
     <!-- bootstrap polymer -->
-    <script type="application/dart">export 'package:polymer/init.dart';</script>
+<!--    <script type="application/dart">export 'package:polymer/init.dart';</script> -->
+    <script type="application/dart" src="main.dart"></script>
     <script src="packages/browser/dart.js"></script>
   </body>
 </html>

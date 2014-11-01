@@ -42,9 +42,12 @@ class AttrHigh extends PolymerElement {
 //    super.attributeChanges(name, oldValue, newValue);
 //  }
 
-//  /// Called when main-app has been fully prepared (Shadow DOM created,
-//  /// property observers set up, event listeners attached).
+  /// Called when main-app has been fully prepared (Shadow DOM created,
+  /// property observers set up, event listeners attached).
 //  ready() {
 //    super.ready();
+//    this.querySelector("#myCheckbox")
+//    ..onClick.listen((e) => registerAccount());
 //  }
+
 }

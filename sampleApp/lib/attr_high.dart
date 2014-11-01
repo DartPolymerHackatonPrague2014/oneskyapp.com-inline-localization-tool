@@ -10,15 +10,16 @@ import 'package:polymer/polymer.dart';
 
 @CustomTag('attr-high')
 class AttrHigh extends PolymerElement {
-  @observable String checked = false;
+  @observable bool checked = false;
 
   /// Constructor used to create instance of MainApp.
   AttrHigh.created() : super.created();
 
-  void checkedChanged(String oldValue, String newValue) {
+  void checkedChanged(bool oldValue, bool newValue) {
     var elements = document.querySelectorAll("*[translateId]");
-    if (newValue) {elements.classes.add('highlight');
-    }else{
+    if (newValue) {
+      elements.classes.add('highlight');
+    } else {
       elements.classes.remove('highlight');
     }
   }
